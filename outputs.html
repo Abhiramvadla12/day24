@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+        .border{
+            height: 100vh;
+            border:4px solid blue;
+            background-image: url(./galaxy.jpg);
+            position: relative;
+            box-shadow: 5px 5px 10px aqua;
+        }
+        #sun{
+            position:absolute;
+            top: 40vh;
+            left: 0vw;
+            height: 20vh;
+            width: 20vw;
+            border-radius: 50%;
+            box-shadow: 2px 2px 10px red;
+        }
+        img{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+        }
+        #mercury{
+            height: 8vh;
+            width: 8vw;
+            position: absolute;
+            top: 48vh;
+            border-radius: 50%;
+            box-shadow: 2px 2px 10px white;
+            left: 25vw;
+            
+        }
+        #venus{
+            height: 9vh;
+            width:9vw;
+            position: absolute;
+            top: 48vh;
+            left: 40vw;
+            box-shadow: 2px 2px 10px white;
+        }
+        #earth{
+            height: 10vh;
+            width:10vw;
+            position: absolute;
+            top: 48vh;
+            left: 55vw;
+            box-shadow: 2px 2px 10px white;
+        }
+        #mars{
+            height: 6vh;
+            width:6vw;
+            position: absolute;
+            top: 48vh;
+            left: 70vw;
+            box-shadow: 2px 2px 10px white;
+        }
+        #saturn{
+            height: 12h;
+            width:12vw;
+            position: absolute;
+            top: 48vh;
+            left: 85vw;
+            box-shadow: 2px 2px 10px white;
+        }
+        
+        img{
+            animation: rotate 2s ease-in-out 0s infinite;
+            transition: all 1s;
+        }
+        @keyframes rotate {
+            0%{transform: rotateY(0deg);}
+            100%{transform: rotateY(360deg);}
+        }
+        .a{
+            border: 2px solid blue;
+            background: black;
+            height: 5vh;
+            box-shadow: 2px 2px 10px aqua;
+            width: 10vw;
+            padding: 5vw;
+            border-radius: 5vw;
+            position: absolute;
+            top: 20vh;
+            left: 40vw;
+
+        }
+        a
+        {
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            font-style: italic;
+            font-size: large;
+        }
+        @media screen and (min-width:1024px){
+            .a{
+                border: 2px solid red;
+                background: balck;
+                padding: 1vw;
+                text-align: center;
+                box-shadow: 2px 2px 10px red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="border">
+        <img src="./sun_2.jpeg" alt="sun" height="100px" width="100px" id="sun">
+        <img src="./mercury_2.jpeg" alt="image not found" id="mercury">
+        <img src="./venus_2.jpeg" alt="" id="venus">
+        <img src="./earh_2.jpeg" alt="" id="earth">
+        <img src="./mars_2.jpeg" alt="" id="mars">
+        <img src="./saturn_2.jpeg" alt="" id="saturn">
+        <div class="a">
+            <a href="./index.html">My Task</a>
+        </div>
+    </div>
+</body>
+</html>

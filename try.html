@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+           /* transition-property: width , background-color;
+            transition-duration: 2s, 1s;
+            transition-delay: 1s;*/
+            /*transition: width 2s, background-color 4s;*/
+            transition: all 2s ;
+
+        }
+        .container:hover{
+            width: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>
