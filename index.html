@@ -40,20 +40,33 @@
         }
         .container > .abhi:hover ~ img{
             transition: transform 5s;
-            transform:translate(5vh,-5vw)
+            transform:translate(10vh,-10vw);
+    
         } 
         .container > .ram:hover ~ img{
             transition: transform 5s ease-in-out;
-            transform:rotateY(360deg)
+            transform:rotateY(360deg);
         } 
         .container > .vadla:hover ~ img{
             transition: transform 5s;
-            transform:scale(1.3)
+            transform:scale(1.3);
         } 
         .container > .chary:hover ~ img{
             transition: transform 5s;
-            transform:skew(360deg,360deg)
+            transform:skew(360deg,360deg);
         } 
+        .abhi:hover{
+            background-color: rgb(39, 227, 39);
+        }
+        .ram:hover{
+            background-color: rgb(39, 227, 39);
+        }
+        .vadla:hover{
+            background-color: rgb(39, 227, 39);
+        }
+        .chary:hover{
+            background-color: rgb(39, 227, 39);
+        }
         @media  screen and (min-width:1024px) {
             button{
                 width: 18vw;
